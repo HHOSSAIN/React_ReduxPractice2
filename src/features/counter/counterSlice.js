@@ -1,4 +1,5 @@
-import { createSlice } from "@reduxjs/toolkit/dist/createSlice";
+//import { createSlice } from "@reduxjs/toolkit/dist/createSlice";
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     count: 0
@@ -7,7 +8,7 @@ const initialState = {
 //creating the counter slice
 export const counterSlice = createSlice({
     name: 'counter',
-    initialState,
+    initialState, //here prolly we specify where we are storing our state attrbiutes
     reducers:{ //in reducers, we will name all our different actions, similar to "useReducer" hook 
         increment: (state) =>{
             state.count += 1;
